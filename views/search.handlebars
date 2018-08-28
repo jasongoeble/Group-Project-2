@@ -1,0 +1,39 @@
+<div id="search">
+
+    <div class="container">
+
+        {{>navSearch}}
+
+
+        <div id="searchGameContainer">
+
+            <div class="sectionHead">
+                <img src="/images/yourGames.gif" alt="Your Games" class="sectionImage">
+            </div>
+
+            <hr class="blueLine" />
+
+            <div>
+
+                {{#each searchGameObject}}
+
+                <div class="gameList">
+
+                    <img src="{{this.image}}" class="gameImage">
+                    <h5>{{this.name}}</h5>
+                    Release Date: {{this.releaseDate}}<br />
+
+                </div>
+
+                {{/each}}
+
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+
+    </div>
+
+
+</div>
